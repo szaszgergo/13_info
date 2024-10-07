@@ -1,0 +1,4 @@
+#222 szürke
+#000 fekete
+#fff fehér
+#ff0000 red
