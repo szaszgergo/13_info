@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <button id="ujsor">Új sor</button>
+    <table id="tablazat">
+        <tr>
+            <th>első</th>
+            <th>második</th>
+            <th>harmadik</th>
+        </tr>
+    </table>
+    <script>
+        ujsor.onclick = addTR
+        function addTR() {
+            let tr = document.createElement("tr")
+            // let parent = document.getElementById("tablazat")
+            // parent.appendChild(tr)
+            tablazat.appendChild(tr)
+
+            // let td1 = document.createElement("td")
+            // td1.innerHTML = "1"
+            // tr.appendChild(td1)
+            // let td2 = document.createElement("td")
+            // td2.innerHTML = "2"
+            // tr.appendChild(td2)
+            // let td3 = document.createElement("td")
+            // td3.innerHTML = "3"
+            // tr.appendChild(td3)
+            
+            addTD(tr,"egy")
+            addTD(tr,"kettő")
+            addTD(tr,"három")            
+        }
+
+        function addTD(parent, szoveg) {
+            let td = document.createElement("td")
+            td.innerHTML = szoveg
+            parent.appendChild(td)
+        }
+
+    </script>
+</body>
+
+</html>

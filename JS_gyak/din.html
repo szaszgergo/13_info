@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .teszt{
+        background-color: red;
+        color: white;
+        width: 50%;
+        padding: 20px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <button id="addDiv" onmouseover="addDiv()">Add Div</button>
+    <button id="removeDiv" onclick="removeDiv()">Remove Div</button>
+    <button id="removeAllDiv" onclick="removeAllDiv()">Remove All Div</button>
+    <div id="listDiv"></div>
+
+<script>
+    function addDiv(){
+        let tesztDiv = document.createElement("div")
+        let parent =document.getElementById("listDiv")
+        tesztDiv.innerHTML="Ez egy tesztDiv"
+       // tesztDiv.style.color="red"
+        tesztDiv.className="teszt"
+        parent.appendChild(tesztDiv)
+    }
+    function removeDiv(){
+        let tesztDiv= document.querySelector(".teszt")
+        let parent =document.getElementById("listDiv")
+        parent.removeChild(tesztDiv)
+
+    }
+    function removeAllDiv(){
+        let tesztDivLista= document.querySelectorAll(".teszt")
+        for (let index = 0; index < tesztDivLista.length; index++) {
+            tesztDivLista[index].remove()            
+        }
+
+        let parent =document.getElementById("listDiv")
+        parent.removeChild(tesztDivLista)
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow</title>
+</head>
+<body>
+    <h2>the arrow function</h2>
+    <p id="demo"></p>
+
+    <script>
+        //1.példa parameteres 
+        function szorzas(a,b){
+                return a*b
+        }
+        
+        let szorzas2 = (a,b) => {
+            return a*b
+        }
+
+        let szorzas3 = (a,b) =>a*b;
+
+        demo.innerHTML=szorzas(3,4) + "<br>"
+        demo.innerHTML+=szorzas2(2,5) + "<br>"
+        demo.innerHTML+=szorzas2(3,5) + "<br>"
+
+        //parameter nelkuli
+
+        function hello(){
+            return "hello, world!"
+        }
+
+        let hello2=()=>"hello,world!"
+        demo.innerHTML+=hello() + "<br>"
+        demo.innerHTML+=hello2() + "<br>"
+
+
+
+
+    </script>
+</body>
+</html>

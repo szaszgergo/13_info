@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    p{
+        width: 9%;
+    }
+</style>
+<body>
+<p>Név:</p>
+<input id="nevinput" type="text">
+<button id="gomb" type="button" onclick="myFunction()" >Küld</button> 
+<p id="eredmeny"></p>
+    
+    
+    
+    <script>
+        function myFunction() {
+        let valami2 = document.getElementById('nevinput').value;
+        if(isEmpty(valami2)){
+            document.getElementById("eredmeny").style.color = "red";
+            document.getElementById('eredmeny').innerHTML =`Írj be valami nevet!`;
+
+        }
+        else{
+            document.getElementById('eredmeny').innerHTML =`Üdv, ${valami2}!`;
+            document.getElementById("eredmeny").style.color = "black";
+
+            
+        }
+
+    }   
+    </script>
+
+
+<hr>
+
+<h1>hello guy</h1>
+<button id="red" onclick="red()">oda</button>
+<button id="vissza" onclick="vissza()">vissza</button>
+
+<script>
+
+function isEmpty(str) {
+    return (!str || str.length === 0 );
+}
+
+function red(){
+    let h1 = document.querySelector("h1")
+    h1.style.color="red"
+    h1.style.marginLeft="50px"
+    h1.style.fontSize="20px"
+    h1.style.fontStyle="Italic"
+
+
+}
+function vissza(){
+    let h1 = document.querySelector("h1")
+    h1.style.color="black"
+    h1.style.marginLeft="0px"
+    h1.style.fontSize="34px"
+    h1.style.fontStyle="normal"
+
+}
+</script>
+
+<hr>
+<button id="fel" onclick="fel()">
+fel
+</button>
+
+<img src="pic_bulboff.gif" id="kep" alt="asd">
+
+
+<button id="le" onclick="le()">
+vissza
+</button>
+
+<script>
+function fel(){
+    document.getElementById("kep").src = "pic_bulbon.gif";
+
+}
+
+function le(){
+    document.getElementById("kep").src = "pic_bulboff.gif";
+
+}
+
+</script>
+<hr>
+<p>a: <input type="number" id="a_oldal"></p>
+<p>b: <input type="number" id="b_oldal"></p>
+<p id="eredmeny2">Eredmény:</p>
+<button id="terulet">Terület</button>
+<button id="kerulet">Kerület</button>
+
+<script>
+function terulet() {
+    let a = document.getElementById("a_oldal").value;
+    let b = document.getElementById("b_oldal").value;
+    if(a>0 && b>0){
+        let terulet = a * b;
+        document.getElementById("eredmeny2").innerHTML =`Eredmény: ${terulet}`;
+        document.getElementById("eredmeny2").style.backgroundColor ="blue";
+        document.getElementById("eredmeny2").style.color ="white";
+
+
+    }
+    else{
+        document.getElementById("eredmeny2").innerHTML = `Írj be pozítiv számot`;
+        
+    }
+}
+
+function kerulet() {
+    let a = document.getElementById("a_oldal").value;
+    let b = document.getElementById("b_oldal").value;
+    if(a>0 && b>0){
+        let kerulet = a * 2 + b * 2;
+        document.getElementById("eredmeny2").innerHTML = `Eredmény: ${kerulet}`;
+
+    }
+    else{
+        document.getElementById("eredmeny2").innerHTML = `Írj be pozítiv számot`;
+        
+    }
+}
+
+
+document.getElementById("terulet").addEventListener("mouseover", terulet);
+document.getElementById("kerulet").addEventListener("click", kerulet);
+</script>
+
+
+</body>
+</html>

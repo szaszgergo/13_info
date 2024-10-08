@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablazat</title>
+</head>
+<style>
+    #asd th{
+    
+        border: solid black 1px;
+    }
+</style>
+<body>
+    <button onclick="addTr()">addTr</button>
+    <button onclick="removeTr()">removeTr</button>
+
+
+    <table id="asd">
+        <tr>
+            <th>Első</th>
+            <th>Második</th>
+            <th>Harmadik</th>
+        </tr>   
+    </table>
+</body>
+
+<script>
+
+        
+
+        function addTr(){
+            let tr=document.createElement('tr')
+            let parent=document.getElementById('asd')
+            parent.appendChild(tr)     
+            for (let index = 1; index < 4; index++) {
+                addTd(parent,index)
+                
+            }
+
+        }
+    
+        function addTd(parent,text){
+            let td = document.createElement("td")
+            td.innerHTML=text
+            parent.appendChild(td)
+        }
+
+  
+        function removeTr(){
+            let parent = document.getElementById("asd")
+            if(parent.children.length >1){
+                parent.removeChild(parent.lastChild)
+            }
+        }
+</script>
+</html>

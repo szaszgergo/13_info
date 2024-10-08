@@ -1,0 +1,53 @@
+git init
+git config --list
+git config --global user.name "név"
+git config --global user.email "név@localhost.hu"
+git config --global init.defaultbranch main
+git branch -m master
+
+git add fájlnév //fájlok hozzáadása a stage-hez
+(git add .; git add *.html; git add *)
+git commit -m "megjegyzés"
+git status //aktuális állapot
+git log //korábbi commitok lekérdezése
+
+// Összekapcsolás távoli repository-val
+git remote add origin https://github.com/peterfod/gitteszt13C.git
+git push -u origin main
+
+git pull //lemásolja a távoli repository-t
+git push //feltölti a local repository-t a távoli repository-ba
+
+//Távoli repository lemásolása
+git clone https://github.com/peterfod/gitteszt13E.git
+
+//követés leállítása
+.gitignore
+
+git rm --cached fájlnév // követés leallitasa
+git rm -r --cached mappa  mappa kovetes leallitasa
+
+
+git reset fajlnev
+git restore --stage fajlnev
+git checkout fajlnev
+git diff fajlnev
+
+verzió vissza
+git reset <commit-hash>
+git reset --hard  <commit-hash>
+git revert <commit-hash>
+git checkout 
+
+git branch ágnév
+git checkout ágnév
+git branch -D ágnév
+git merge
+git diff ágnév..ágnév
+git branch --delete név
+git gc tömörités tisztitás
+
+
+
+
+

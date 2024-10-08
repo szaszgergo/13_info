@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Table2</title>
+</head>
+<body>
+    <table id="tablazat">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </table>
+    <script>
+        const Adatok = [
+            {
+                id: "1",
+                name: "Zámbó Jimmy",
+                email: "jimmy@kiraly.hu"
+            },
+            {
+                id: "2",
+                name: "Korda György",
+                email: "gyuri@repter.hu"
+            },
+            {
+                id: "3",
+                name: "Balázs Klári",
+                email: "klari@repter.hu"
+            },
+            {
+                id: "4",
+                name: "Ganxsta Zolee",
+                email: "zolee@kartel.hu"
+            },
+            {
+                id: "5",
+                name: "Bódi Guszti",
+                email: "guszti@mulatos.hu"
+            }
+        ]
+        document.querySelector('body').onload=addTR(Adatok);
+ 
+
+    function addTR(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                let tr = document.createElement('tr');
+                addTD(tr, arr[i].id);
+                addTD(tr, arr[i].name);
+                addTD(tr, arr[i].email);
+                tablazat.appendChild(tr);
+            }
+        }
+
+
+        function addTD(parent, szoveg) {
+            let td = document.createElement("td")
+            td.innerHTML = szoveg
+            parent.appendChild(td)
+        }
+    </script>    
+</body>
+</html>
