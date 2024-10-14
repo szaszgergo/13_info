@@ -8,11 +8,12 @@
 </head>
 <body>
     <table id="tablazat">
-        <tr>
+        <!--   <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
-        </tr>
+        </tr> -->
+      
     </table>
     <script>
         const Adatok = [
@@ -43,18 +44,37 @@
 
             }
         ]
-        document.querySelector('body').onload=addTR(Adatok);
- 
+        document.querySelector('body').onload = function() {
+            addTH(Adatok); // Csak egyszer hoz létre TH elemeket
+            addTR(Adatok); // Az összes adatot sorokba helyezi
+};
+        
 
-    function addTR(arr) {
-            for (let i = 0; i < arr.length; i++) {
-                let tr = document.createElement('tr');
-                addTD(tr, arr[i].id);
-                addTD(tr, arr[i].name);
-                addTD(tr, arr[i].email);
-                tablazat.appendChild(tr);
-            }
-        }
+
+        function addTR(arr) {
+        arr.map(item => { 
+        let tr = document.createElement('tr');
+        tablazat.appendChild(tr);
+
+        const keys = Object.keys(item);
+        keys.map(key => {
+            addTD(tr, item[key]); 
+        });
+    });
+}
+
+function addTH(arr){
+    let tr = document.createElement('tr'); 
+    tablazat.appendChild(tr);
+
+    const keys = Object.keys(arr[0]);
+    keys.map(key => {
+        let th = document.createElement('th');
+        th.textContent = key;
+        tr.appendChild(th);
+    });
+}
+
 
 
         function addTD(parent, szoveg) {

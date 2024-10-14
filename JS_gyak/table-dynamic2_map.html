@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Sportok és kaloriak</title>
+</head>
+<stlye>
+
+</stlye>
+<body>
+    <table id="tablazat">
+        <!--   <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr> -->
+      
+    </table>
+    <script>
+        const sportok = [
+            {
+                "Futás": 680,
+                "Focizás": 550,
+                "Bringázás": 480,
+                "Hegymászás": 420,
+                "Lovaglás":370,
+                "Túrázás": 360,
+                "Kajakozás": 340,
+                "Súlyzós edzés": 320,
+                "Pingpongozás": 270,
+                "Kutyasétáltatás": 200,
+            }
+        ]
+
+
+
+
+
+        document.querySelector('body').onload = function() {
+            addTH(Adatok); // Csak egyszer hoz létre TH elemeket
+            addTR(Adatok); // Az összes adatot sorokba helyezi
+};
+        
+
+
+        function addTR(arr) {
+        arr.map(item => { 
+        let tr = document.createElement('tr');
+        tablazat.appendChild(tr);
+
+        const keys = Object.keys(item);
+        keys.map(key => {
+            addTD(tr, item[key]); 
+        });
+    });
+}
+
+function addTH(arr){
+    let tr = document.createElement('tr'); 
+    tablazat.appendChild(tr);
+
+    const keys = Object.keys(arr[0]);
+    keys.map(key => {
+        let th = document.createElement('th');
+        th.textContent = key;
+        tr.appendChild(th);
+    });
+}
+
+
+
+        function addTD(parent, szoveg) {
+            let td = document.createElement("td")
+            td.innerHTML = szoveg
+            parent.appendChild(td)
+        }
+    </script>    
+</body>
+</html>

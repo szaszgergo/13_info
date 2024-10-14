@@ -37,8 +37,12 @@
                 lastname: "Jimmy"
             },
         ]
-        
-        const fullkings = kings.map(king => king.firstname + " " +king.lastname)
+
+        function getFullName(king){
+            return  king.firstname.concat(" ",king.lastname)
+        }
+        const fullkings = kings.map(getFullName)
+        // const fullkings = kings.map(king => king.firstname.concat(" ",king.lastname)) ez is egy jó megoldás
         test.innerHTML+="<br>"+fullkings + "<br>"
 
     </script>

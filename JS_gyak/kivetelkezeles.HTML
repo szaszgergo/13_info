@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kivetelkezeles</title>
+</head>
+<body>
+    <h1>kivetelkezeles</h1>
+    <p>Adjon meg egy pozitiv szamot</p>
+    <input type="text">
+    <button>Ellenorzes</button>
+    <p id="error"></p>
+<p id="test"></p>
+    <script>
+         try {
+            alert("nincs hiba")
+         } catch (error) {
+             document.getElementById("error").innerText=error.message
+         }
+         finally{
+            document.getElementById("ertestror").innerText="ez valami"
+
+         }
+        document.querySelector("button").onclick=myControl  
+        function myControl(){
+            let x = document.querySelector("input").value
+
+            try {
+                if (x==" ") {
+                throw "ures"
+                }
+                if (isNaN(x)) {
+                throw "Nem szamot adtal meg"
+                }
+                x=Number(x)
+
+                if (x=="") {
+                throw "ures"
+                }
+
+                if (x<0) {
+                throw "negativszam"
+            }
+            } catch (error) {
+                document.getElementById("error").innerText=error
+            }
+
+           
+          //  document.getElementById("error").innerText=x
+        }
+       
+
+    </script>
+</body>
+</html>
