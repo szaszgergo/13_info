@@ -1,0 +1,6 @@
+Z:\13\mobil_telek\hibakereses_shell_rendezes\hibakereses_shell_rendezes\bin\Debug\hibakereses_shell_rendezes.exe.config
+Z:\13\mobil_telek\hibakereses_shell_rendezes\hibakereses_shell_rendezes\bin\Debug\hibakereses_shell_rendezes.exe
+Z:\13\mobil_telek\hibakereses_shell_rendezes\hibakereses_shell_rendezes\bin\Debug\hibakereses_shell_rendezes.pdb
+Z:\13\mobil_telek\hibakereses_shell_rendezes\hibakereses_shell_rendezes\obj\Debug\hibakereses_shell_rendezes.csprojAssemblyReference.cache
+Z:\13\mobil_telek\hibakereses_shell_rendezes\hibakereses_shell_rendezes\obj\Debug\hibakereses_shell_rendezes.exe
+Z:\13\mobil_telek\hibakereses_shell_rendezes\hibakereses_shell_rendezes\obj\Debug\hibakereses_shell_rendezes.pdb
