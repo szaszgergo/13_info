@@ -1,0 +1,12 @@
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\bin\Debug\hidak2.exe.config
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\bin\Debug\hidak2.exe
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\bin\Debug\hidak2.pdb
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.csproj.AssemblyReference.cache
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.Form1.resources
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.Properties.Resources.resources
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.csproj.GenerateResource.cache
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.csproj.CoreCompileInputs.cache
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.exe
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.pdb
+C:\Users\Gergő\Desktop\hidak2\hidak2\hidak2\obj\Debug\hidak2.KeresesForm.resources
