@@ -1,0 +1,17 @@
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\bin\Debug\net8.0-windows\fuggohidak.exe
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\bin\Debug\net8.0-windows\fuggohidak.deps.json
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\bin\Debug\net8.0-windows\fuggohidak.runtimeconfig.json
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\bin\Debug\net8.0-windows\fuggohidak.dll
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\bin\Debug\net8.0-windows\fuggohidak.pdb
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.Form1.resources
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.csproj.GenerateResource.cache
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.AssemblyInfoInputs.cache
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.AssemblyInfo.cs
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.csproj.CoreCompileInputs.cache
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.dll
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\refint\fuggohidak.dll
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.pdb
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.genruntimeconfig.cache
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\ref\fuggohidak.dll
+C:\Users\gergo\Desktop\fuggohidak\fuggohidak\fuggohidak\obj\Debug\net8.0-windows\fuggohidak.Form2.resources
